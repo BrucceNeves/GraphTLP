@@ -5,7 +5,7 @@ DESCRIPTION = 'Transductive Label Propagation'
 LONG_DESCRIPTION = 'Transductive label propagation classic algorithms'
 
 setup(
-        name="transductive_label_propagation", 
+        name="graphtlp", 
         version=VERSION,
         author="Brucce",
         author_email="<youremail@email.com>",
