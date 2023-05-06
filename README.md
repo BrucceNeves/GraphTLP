@@ -2,7 +2,7 @@
 Transductive Label Propagation Algorithms
 
 # Resources
-- [Datasets](https://github.com/BrucceNeves/TSRN4HEN/tree/master/datasets): twelve heterogeneous event networks from different domains (extracted from Reuters Corpus).
+- [Datasets](https://github.com/BrucceNeves/TSRN4HEN/tree/master/datasets) and [Labels](https://github.com/BrucceNeves/TSRN4HEN/tree/master/labels): twelve heterogeneous event networks from different domains (extracted from Reuters Corpus).
 
 # Available Algorithms
 - Homogeneous Networks:
