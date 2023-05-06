@@ -8,7 +8,7 @@ class tlp_network:
     self.matrix.loc[labels.index, 'y'] = labels['y']
     self.matrix.reset_index(inplace=True)
 
-  def __node2relation(n1, n2):
+  def __node2relation(self, n1, n2):
     x = [x.split(':')[-1].lower() for x in [n1, n2]]
     x.sort()
     return "|".join(x)
