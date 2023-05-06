@@ -3,7 +3,7 @@ def __transductiveLabelPropagation__(iterations, convergenceThreshold, network, 
   matrix = network.matrix
   node2id = {}
   matrix_f = []
-  for id, (index, y) in enumerate(aux.matrix.values):
+  for id, (index, y) in enumerate(matrix.values):
     node2id[index] = id
     matrix_f.append(zeros(network.vector_size) if y is None else y)
   matrix_f = array(matrix_f)
@@ -14,7 +14,7 @@ def __transductiveLabelPropagation__(iterations, convergenceThreshold, network, 
     matrix_f = array(new_f)
     if convergence_value < convergenceThreshold:
       break
-  return i+1, zip(list(node2id.keys()), matrix_f)
+  return i+1, pd.DataFrame(zip(list(node2id.keys()), matrix_f), columns=['node', 'y']).set_index('node')
 
 class GFHF:
   def calculete_degree(self, edges, degree, node2id):
