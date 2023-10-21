@@ -22,7 +22,7 @@ from graphtlp.network import tlp_network
 from graphtlp import GFHF, LLGC, GNetMine, LPHN
 ```
 
-## 1) Graph Creation
+# 1) Graph Creation
 For convenience, we will generate a random bipartite graph using networkx, however it works with any type of undirected graph. In addition, we will put a weight of 1 for all edges, but it can be any value > 0 and <= 1.
 ```python
 G = bipartite.random_graph(10, 40, 0.5)
